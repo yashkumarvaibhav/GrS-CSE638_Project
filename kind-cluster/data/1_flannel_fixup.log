@@ -1,0 +1,129 @@
+nohup: ignoring input
+
+  Quick fixup for flannel at 2026-03-20 14:22:17.470438
+
+
+==================================================
+  T1 server=cni-bench-worker client=cni-bench-worker mode=pod
+==================================================
+
+  --- T1 64B c=16 rep 1/3 ---
+  netperf T1 64B r1 → lat:11.65μs trans:85845.75/s stream:1100.88Mbps
+  fortio T1 64B c=16 r1 → QPS:8.0 p99:2.7317ms
+
+  --- T1 64B c=16 rep 2/3 ---
+  netperf T1 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T1 64B c=16 r2 → QPS:8.0 p99:0.7845ms
+
+  --- T1 64B c=16 rep 3/3 ---
+  netperf T1 64B r3 → lat:11.28μs trans:88669.56/s stream:1098.46Mbps
+  fortio T1 64B c=16 r3 → QPS:0 p99:0ms
+
+  --- T1 4KB c=16 rep 1/3 ---
+  netperf T1 4KB r1 → lat:13.06μs trans:76545.88/s stream:4687.47Mbps
+  fortio T1 4KB c=16 r1 → QPS:8.0 p99:2.0062ms
+
+  --- T1 4KB c=16 rep 2/3 ---
+  netperf T1 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T1 4KB c=16 r2 → QPS:8.0 p99:1.2261ms
+
+  --- T1 4KB c=16 rep 3/3 ---
+  netperf T1 4KB r3 → lat:12.89μs trans:77603.29/s stream:4579.58Mbps
+  fortio T1 4KB c=16 r3 → QPS:0 p99:0ms
+
+  --- T1 1MB c=16 rep 1/3 ---
+  netperf T1 1MB r1 → lat:225.45μs trans:4435.51/s stream:53195.13Mbps
+  fortio T1 1MB c=16 r1 → QPS:8.0 p99:9.4957ms
+
+  --- T1 1MB c=16 rep 2/3 ---
+  netperf T1 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T1 1MB c=16 r2 → QPS:8.0 p99:7.2159ms
+
+  --- T1 1MB c=16 rep 3/3 ---
+  netperf T1 1MB r3 → lat:229.59μs trans:4355.54/s stream:56852.77Mbps
+  fortio T1 1MB c=16 r3 → QPS:0 p99:0ms
+
+==================================================
+  T2 server=cni-bench-worker client=cni-bench-worker2 mode=pod
+==================================================
+
+  --- T2 64B c=16 rep 1/3 ---
+  netperf T2 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T2 64B c=16 r1 → QPS:8.0 p99:1.3241ms
+
+  --- T2 64B c=16 rep 2/3 ---
+  netperf T2 64B r2 → lat:24.13μs trans:41446.74/s stream:462.77Mbps
+  fortio T2 64B c=16 r2 → QPS:0 p99:0ms
+
+  --- T2 64B c=16 rep 3/3 ---
+  netperf T2 64B r3 → lat:24.02μs trans:41627.9/s stream:289.24Mbps
+  fortio T2 64B c=16 r3 → QPS:8.0 p99:1.6842ms
+
+  --- T2 4KB c=16 rep 1/3 ---
+  netperf T2 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T2 4KB c=16 r1 → QPS:8.0 p99:2.6556ms
+
+  --- T2 4KB c=16 rep 2/3 ---
+  netperf T2 4KB r2 → lat:26.86μs trans:37234.81/s stream:1938.9Mbps
+  fortio T2 4KB c=16 r2 → QPS:0 p99:0ms
+
+  --- T2 4KB c=16 rep 3/3 ---
+  netperf T2 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T2 4KB c=16 r3 → QPS:8.0 p99:2.1018ms
+
+  --- T2 1MB c=16 rep 1/3 ---
+  netperf T2 1MB r1 → lat:468.42μs trans:2134.84/s stream:35636.26Mbps
+  fortio T2 1MB c=16 r1 → QPS:0 p99:0ms
+
+  --- T2 1MB c=16 rep 2/3 ---
+  netperf T2 1MB r2 → lat:465.99μs trans:2145.96/s stream:36911.73Mbps
+  fortio T2 1MB c=16 r2 → QPS:8.0 p99:8.0268ms
+
+  --- T2 1MB c=16 rep 3/3 ---
+  netperf T2 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T2 1MB c=16 r3 → QPS:8.0 p99:8.1455ms
+
+==================================================
+  T3 server=cni-bench-worker client=cni-bench-worker2 mode=service
+==================================================
+
+  --- T3 64B c=16 rep 1/3 ---
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=16 r1 → QPS:0 p99:0ms
+
+  --- T3 64B c=16 rep 2/3 ---
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=16 r2 → QPS:0 p99:0ms
+
+  --- T3 64B c=16 rep 3/3 ---
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=16 r3 → QPS:0 p99:0ms
+
+  --- T3 4KB c=16 rep 1/3 ---
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=16 r1 → QPS:0 p99:0ms
+
+  --- T3 4KB c=16 rep 2/3 ---
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=16 r2 → QPS:0 p99:0ms
+
+  --- T3 4KB c=16 rep 3/3 ---
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=16 r3 → QPS:0 p99:0ms
+
+  --- T3 1MB c=16 rep 1/3 ---
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=16 r1 → QPS:0 p99:0ms
+
+  --- T3 1MB c=16 rep 2/3 ---
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=16 r2 → QPS:0 p99:0ms
+
+  --- T3 1MB c=16 rep 3/3 ---
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=16 r3 → QPS:0 p99:0ms
+
+  Wrote 27 netperf rows to ./data/1_flannel_netperf.csv
+  Wrote 27 fortio rows to ./data/1_flannel_fortio.csv
+
+  Done at 2026-03-20 14:42:02.015720

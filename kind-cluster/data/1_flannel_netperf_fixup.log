@@ -1,0 +1,93 @@
+nohup: ignoring input
+
+  Netperf fixup: flannel/baseline at 2026-03-20 14:18:42.381686
+
+
+  === Netperf T1 mode=pod ===
+  netperf T1 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T1 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+
+  === Netperf T2 mode=pod ===
+  netperf T2 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T2 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+
+  === Netperf T3 mode=service ===
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+
+  Done. Wrote 81 rows to ./data/1_flannel_netperf.csv
