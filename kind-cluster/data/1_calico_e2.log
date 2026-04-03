@@ -1,0 +1,42 @@
+nohup: ignoring input
+
+##################################################
+  calico / wireguard — 2026-03-29 20:34:37.609977
+  Duration per test: 10s
+##################################################
+
+
+==================================================
+  E2 server=cni-bench-worker client=cni-bench-worker2 mode=pod
+==================================================
+
+  --- E2 4KB P=16 rep 1/5 ---
+  iperf3 E2 4KB P=16 r1 → TCP:1.5016G UDP:2.5551G
+  netperf E2 4KB r1 → lat:236.05μs trans:4236.34/s stream:1468.97Mbps
+  fortio E2 4KB c=16 r1 → QPS:19543.04 p99:1.9751ms
+
+  --- E2 4KB P=16 rep 2/5 ---
+  iperf3 E2 4KB P=16 r2 → TCP:1.5019G UDP:2.5095G
+  netperf E2 4KB r2 → lat:228.48μs trans:4376.77/s stream:1467.48Mbps
+  fortio E2 4KB c=16 r2 → QPS:19564.55 p99:1.9742ms
+
+  --- E2 4KB P=16 rep 3/5 ---
+  iperf3 E2 4KB P=16 r3 → TCP:1.4975G UDP:2.5554G
+  netperf E2 4KB r3 → lat:230.47μs trans:4338.96/s stream:1465.78Mbps
+  fortio E2 4KB c=16 r3 → QPS:19538.77 p99:1.9756ms
+
+  --- E2 4KB P=16 rep 4/5 ---
+  iperf3 E2 4KB P=16 r4 → TCP:1.4978G UDP:2.5292G
+  netperf E2 4KB r4 → lat:233.24μs trans:4287.47/s stream:1511.26Mbps
+  fortio E2 4KB c=16 r4 → QPS:19643.57 p99:1.9738ms
+
+  --- E2 4KB P=16 rep 5/5 ---
+  iperf3 E2 4KB P=16 r5 → TCP:1.4978G UDP:2.5204G
+  netperf E2 4KB r5 → lat:223.65μs trans:4471.25/s stream:1466.31Mbps
+  fortio E2 4KB c=16 r5 → QPS:19429.11 p99:1.9807ms
+  → 5 rows → 1_calico_iperf3.csv
+  → 5 rows → 1_calico_netperf.csv
+  → 5 rows → 1_calico_fortio.csv
+
+  DONE: calico/wireguard at 2026-03-29 20:41:25.429245
+  Data in: ./data/

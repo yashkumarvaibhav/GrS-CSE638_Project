@@ -1,0 +1,443 @@
+nohup: ignoring input
+
+##################################################
+  calico / baseline — 2026-03-29 18:23:04.681028
+  Duration per test: 10s
+##################################################
+
+
+==================================================
+  T1 server=cni-bench-worker client=cni-bench-worker mode=pod
+==================================================
+
+  --- T1 64B P=1 rep 1/3 ---
+  iperf3 T1 64B P=1 r1 → TCP:0.4462G UDP:0.1153G
+  netperf T1 64B r1 → lat:14.51μs trans:68910.55/s stream:783.1Mbps
+  fortio T1 64B c=1 r1 → QPS:10250.53 p99:0.9906ms
+
+  --- T1 64B P=1 rep 2/3 ---
+  iperf3 T1 64B P=1 r2 → TCP:0G UDP:0G
+  netperf T1 64B r2 → lat:14.67μs trans:68148.18/s stream:789.03Mbps
+  fortio T1 64B c=1 r2 → QPS:11287.71 p99:0.9905ms
+
+  --- T1 64B P=1 rep 3/3 ---
+  iperf3 T1 64B P=1 r3 → TCP:0.4419G UDP:0.1152G
+  netperf T1 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T1 64B c=1 r3 → QPS:10762.98 p99:0.9905ms
+
+  --- T1 64B P=16 rep 1/3 ---
+  iperf3 T1 64B P=16 r1 → TCP:0.5375G UDP:0.1133G
+  netperf T1 64B r1 → lat:14.89μs trans:67177.97/s stream:800.2Mbps
+  fortio T1 64B c=16 r1 → QPS:100782.11 p99:1.5124ms
+
+  --- T1 64B P=16 rep 2/3 ---
+  iperf3 T1 64B P=16 r2 → TCP:0.5368G UDP:0.1122G
+  netperf T1 64B r2 → lat:14.9μs trans:67110.74/s stream:775.65Mbps
+  fortio T1 64B c=16 r2 → QPS:103973.8 p99:1.4687ms
+
+  --- T1 64B P=16 rep 3/3 ---
+  iperf3 T1 64B P=16 r3 → TCP:0.5413G UDP:0.1131G
+  netperf T1 64B r3 → lat:14.85μs trans:67348.79/s stream:765.31Mbps
+  fortio T1 64B c=16 r3 → QPS:100996.25 p99:1.5122ms
+
+  --- T1 64B P=64 rep 1/3 ---
+  iperf3 T1 64B P=64 r1 → TCP:0.561G UDP:0.1133G
+  netperf T1 64B r1 → lat:14.81μs trans:67504.45/s stream:789.64Mbps
+  fortio T1 64B c=64 r1 → QPS:121610.94 p99:2.9377ms
+
+  --- T1 64B P=64 rep 2/3 ---
+  iperf3 T1 64B P=64 r2 → TCP:0.564G UDP:0.1137G
+  netperf T1 64B r2 → lat:15.12μs trans:66154.56/s stream:776.71Mbps
+  fortio T1 64B c=64 r2 → QPS:127449.0 p99:2.8836ms
+
+  --- T1 64B P=64 rep 3/3 ---
+  iperf3 T1 64B P=64 r3 → TCP:0.548G UDP:0.1139G
+  netperf T1 64B r3 → lat:15.31μs trans:65333.33/s stream:778.29Mbps
+  fortio T1 64B c=64 r3 → QPS:135533.21 p99:2.8697ms
+
+  --- T1 4KB P=1 rep 1/3 ---
+  iperf3 T1 4KB P=1 r1 → TCP:3.7066G UDP:3.855G
+  netperf T1 4KB r1 → lat:16.12μs trans:62052.97/s stream:3428.06Mbps
+  fortio T1 4KB c=1 r1 → QPS:7295.78 p99:0.9918ms
+
+  --- T1 4KB P=1 rep 2/3 ---
+  iperf3 T1 4KB P=1 r2 → TCP:3.6228G UDP:3.925G
+  netperf T1 4KB r2 → lat:16.07μs trans:62245.79/s stream:3315.43Mbps
+  fortio T1 4KB c=1 r2 → QPS:7192.87 p99:0.9918ms
+
+  --- T1 4KB P=1 rep 3/3 ---
+  iperf3 T1 4KB P=1 r3 → TCP:3.6308G UDP:3.8756G
+  netperf T1 4KB r3 → lat:16.04μs trans:62349.43/s stream:3343.03Mbps
+  fortio T1 4KB c=1 r3 → QPS:7518.81 p99:0.9916ms
+
+  --- T1 4KB P=16 rep 1/3 ---
+  iperf3 T1 4KB P=16 r1 → TCP:3.6063G UDP:3.7985G
+  netperf T1 4KB r1 → lat:16.01μs trans:62458.98/s stream:3497.61Mbps
+  fortio T1 4KB c=16 r1 → QPS:39869.68 p99:1.9263ms
+
+  --- T1 4KB P=16 rep 2/3 ---
+  iperf3 T1 4KB P=16 r2 → TCP:5.6919G UDP:3.8042G
+  netperf T1 4KB r2 → lat:16.1μs trans:62127.94/s stream:3457.27Mbps
+  fortio T1 4KB c=16 r2 → QPS:38067.31 p99:1.9378ms
+
+  --- T1 4KB P=16 rep 3/3 ---
+  iperf3 T1 4KB P=16 r3 → TCP:10.2776G UDP:3.8341G
+  netperf T1 4KB r3 → lat:15.88μs trans:62961.66/s stream:3470.04Mbps
+  fortio T1 4KB c=16 r3 → QPS:38453.58 p99:1.935ms
+
+  --- T1 4KB P=64 rep 1/3 ---
+  iperf3 T1 4KB P=64 r1 → TCP:3.4035G UDP:3.6835G
+  netperf T1 4KB r1 → lat:16.22μs trans:61655.56/s stream:3410.79Mbps
+  fortio T1 4KB c=64 r1 → QPS:58389.31 p99:7.5733ms
+
+  --- T1 4KB P=64 rep 2/3 ---
+  iperf3 T1 4KB P=64 r2 → TCP:3.4238G UDP:3.6934G
+  netperf T1 4KB r2 → lat:15.82μs trans:63212.85/s stream:3434.42Mbps
+  fortio T1 4KB c=64 r2 → QPS:59044.45 p99:7.7328ms
+
+  --- T1 4KB P=64 rep 3/3 ---
+  iperf3 T1 4KB P=64 r3 → TCP:3.5115G UDP:3.7317G
+  netperf T1 4KB r3 → lat:15.4μs trans:64928.23/s stream:3548.62Mbps
+  fortio T1 4KB c=64 r3 → QPS:57588.56 p99:8.0052ms
+
+  --- T1 1MB P=1 rep 1/3 ---
+  iperf3 T1 1MB P=1 r1 → TCP:45.8965G UDP:N/AG
+  netperf T1 1MB r1 → lat:280.6μs trans:3563.77/s stream:47697.96Mbps
+  fortio T1 1MB c=1 r1 → QPS:1097.37 p99:2.9295ms
+
+  --- T1 1MB P=1 rep 2/3 ---
+  iperf3 T1 1MB P=1 r2 → TCP:57.0162G UDP:N/AG
+  netperf T1 1MB r2 → lat:286.18μs trans:3494.33/s stream:47328.77Mbps
+  fortio T1 1MB c=1 r2 → QPS:1065.24 p99:2.9361ms
+
+  --- T1 1MB P=1 rep 3/3 ---
+  iperf3 T1 1MB P=1 r3 → TCP:45.9228G UDP:N/AG
+  netperf T1 1MB r3 → lat:284.49μs trans:3515.03/s stream:47321.27Mbps
+  fortio T1 1MB c=1 r3 → QPS:1049.89 p99:2.9438ms
+
+  --- T1 1MB P=16 rep 1/3 ---
+  iperf3 T1 1MB P=16 r1 → TCP:48.0301G UDP:N/AG
+  netperf T1 1MB r1 → lat:286.12μs trans:3495.08/s stream:56286.07Mbps
+  fortio T1 1MB c=16 r1 → QPS:4066.79 p99:15.8056ms
+
+  --- T1 1MB P=16 rep 2/3 ---
+  iperf3 T1 1MB P=16 r2 → TCP:42.8423G UDP:N/AG
+  netperf T1 1MB r2 → lat:286.68μs trans:3488.27/s stream:46564.69Mbps
+  fortio T1 1MB c=16 r2 → QPS:4079.38 p99:15.8376ms
+
+  --- T1 1MB P=16 rep 3/3 ---
+  iperf3 T1 1MB P=16 r3 → TCP:52.1335G UDP:N/AG
+  netperf T1 1MB r3 → lat:286.3μs trans:3492.87/s stream:47429.33Mbps
+  fortio T1 1MB c=16 r3 → QPS:4029.32 p99:15.8321ms
+
+  --- T1 1MB P=64 rep 1/3 ---
+  iperf3 T1 1MB P=64 r1 → TCP:33.2156G UDP:N/AG
+  netperf T1 1MB r1 → lat:285.54μs trans:3502.08/s stream:55437.67Mbps
+  fortio T1 1MB c=64 r1 → QPS:4315.69 p99:67.5198ms
+
+  --- T1 1MB P=64 rep 2/3 ---
+  iperf3 T1 1MB P=64 r2 → TCP:36.6871G UDP:N/AG
+  netperf T1 1MB r2 → lat:287.93μs trans:3473.06/s stream:46534.73Mbps
+  fortio T1 1MB c=64 r2 → QPS:4369.89 p99:67.7954ms
+
+  --- T1 1MB P=64 rep 3/3 ---
+  iperf3 T1 1MB P=64 r3 → TCP:33.3769G UDP:N/AG
+  netperf T1 1MB r3 → lat:284.37μs trans:3516.51/s stream:56006.38Mbps
+  fortio T1 1MB c=64 r3 → QPS:4500.85 p99:66.2417ms
+
+==================================================
+  T2 server=cni-bench-worker client=cni-bench-worker2 mode=pod
+==================================================
+
+  --- T2 64B P=1 rep 1/3 ---
+  iperf3 T2 64B P=1 r1 → TCP:0.2887G UDP:0.0418G
+  netperf T2 64B r1 → lat:33.12μs trans:30195.46/s stream:295.59Mbps
+  fortio T2 64B c=1 r1 → QPS:6663.03 p99:0.9909ms
+
+  --- T2 64B P=1 rep 2/3 ---
+  iperf3 T2 64B P=1 r2 → TCP:0.2851G UDP:0.0416G
+  netperf T2 64B r2 → lat:32.98μs trans:30317.06/s stream:263.5Mbps
+  fortio T2 64B c=1 r2 → QPS:6750.07 p99:0.991ms
+
+  --- T2 64B P=1 rep 3/3 ---
+  iperf3 T2 64B P=1 r3 → TCP:0.2882G UDP:0.0412G
+  netperf T2 64B r3 → lat:32.62μs trans:30659.11/s stream:285.2Mbps
+  fortio T2 64B c=1 r3 → QPS:6337.04 p99:0.991ms
+
+  --- T2 64B P=16 rep 1/3 ---
+  iperf3 T2 64B P=16 r1 → TCP:0.5267G UDP:0.0416G
+  netperf T2 64B r1 → lat:33.18μs trans:30138.29/s stream:207.93Mbps
+  fortio T2 64B c=16 r1 → QPS:75333.44 p99:1.548ms
+
+  --- T2 64B P=16 rep 2/3 ---
+  iperf3 T2 64B P=16 r2 → TCP:0.5372G UDP:0.0406G
+  netperf T2 64B r2 → lat:33.07μs trans:30235.18/s stream:311.54Mbps
+  fortio T2 64B c=16 r2 → QPS:75309.94 p99:1.548ms
+
+  --- T2 64B P=16 rep 3/3 ---
+  iperf3 T2 64B P=16 r3 → TCP:0.5384G UDP:0.0409G
+  netperf T2 64B r3 → lat:32.93μs trans:30371.38/s stream:204.19Mbps
+  fortio T2 64B c=16 r3 → QPS:73731.12 p99:1.584ms
+
+  --- T2 64B P=64 rep 1/3 ---
+  iperf3 T2 64B P=64 r1 → TCP:0.4029G UDP:0.0382G
+  netperf T2 64B r1 → lat:32.91μs trans:30386.62/s stream:209.03Mbps
+  fortio T2 64B c=64 r1 → QPS:118460.03 p99:2.7885ms
+
+  --- T2 64B P=64 rep 2/3 ---
+  iperf3 T2 64B P=64 r2 → TCP:0.4091G UDP:0.0379G
+  netperf T2 64B r2 → lat:33.15μs trans:30163.51/s stream:314.08Mbps
+  fortio T2 64B c=64 r2 → QPS:111600.9 p99:2.8354ms
+
+  --- T2 64B P=64 rep 3/3 ---
+  iperf3 T2 64B P=64 r3 → TCP:0.4097G UDP:0.0381G
+  netperf T2 64B r3 → lat:33.27μs trans:30055.32/s stream:294.21Mbps
+  fortio T2 64B c=64 r3 → QPS:114937.42 p99:2.815ms
+
+  --- T2 4KB P=1 rep 1/3 ---
+  iperf3 T2 4KB P=1 r1 → TCP:1.3223G UDP:1.1737G
+  netperf T2 4KB r1 → lat:35.82μs trans:27914.47/s stream:1330.74Mbps
+  fortio T2 4KB c=1 r1 → QPS:4110.65 p99:0.9927ms
+
+  --- T2 4KB P=1 rep 2/3 ---
+  iperf3 T2 4KB P=1 r2 → TCP:1.3346G UDP:1.1614G
+  netperf T2 4KB r2 → lat:36.67μs trans:27272.35/s stream:1317.69Mbps
+  fortio T2 4KB c=1 r2 → QPS:4414.2 p99:0.993ms
+
+  --- T2 4KB P=1 rep 3/3 ---
+  iperf3 T2 4KB P=1 r3 → TCP:1.3808G UDP:1.1681G
+  netperf T2 4KB r3 → lat:36.26μs trans:27578.79/s stream:1325.42Mbps
+  fortio T2 4KB c=1 r3 → QPS:4060.01 p99:0.9932ms
+
+  --- T2 4KB P=16 rep 1/3 ---
+  iperf3 T2 4KB P=16 r1 → TCP:7.9016G UDP:1.1818G
+  netperf T2 4KB r1 → lat:36.36μs trans:27505.28/s stream:1273.46Mbps
+  fortio T2 4KB c=16 r1 → QPS:28652.7 p99:1.9603ms
+
+  --- T2 4KB P=16 rep 2/3 ---
+  iperf3 T2 4KB P=16 r2 → TCP:3.8052G UDP:1.178G
+  netperf T2 4KB r2 → lat:36.24μs trans:27592.23/s stream:1311.88Mbps
+  fortio T2 4KB c=16 r2 → QPS:29777.57 p99:1.9561ms
+
+  --- T2 4KB P=16 rep 3/3 ---
+  iperf3 T2 4KB P=16 r3 → TCP:7.1959G UDP:1.1575G
+  netperf T2 4KB r3 → lat:35.93μs trans:27833.97/s stream:1317.87Mbps
+  fortio T2 4KB c=16 r3 → QPS:29010.15 p99:1.9581ms
+
+  --- T2 4KB P=64 rep 1/3 ---
+  iperf3 T2 4KB P=64 r1 → TCP:1.2828G UDP:1.1434G
+  netperf T2 4KB r1 → lat:36.3μs trans:27551.67/s stream:1307.25Mbps
+  fortio T2 4KB c=64 r1 → QPS:58159.81 p99:6.4433ms
+
+  --- T2 4KB P=64 rep 2/3 ---
+  iperf3 T2 4KB P=64 r2 → TCP:1.249G UDP:1.1442G
+  netperf T2 4KB r2 → lat:35.98μs trans:27794.2/s stream:1316.44Mbps
+  fortio T2 4KB c=64 r2 → QPS:57510.02 p99:6.4754ms
+
+  --- T2 4KB P=64 rep 3/3 ---
+  iperf3 T2 4KB P=64 r3 → TCP:1.2812G UDP:1.1467G
+  netperf T2 4KB r3 → lat:36.48μs trans:27413.54/s stream:1369.08Mbps
+  fortio T2 4KB c=64 r3 → QPS:56321.36 p99:6.7042ms
+
+  --- T2 1MB P=1 rep 1/3 ---
+  iperf3 T2 1MB P=1 r1 → TCP:23.7481G UDP:N/AG
+  netperf T2 1MB r1 → lat:660.35μs trans:1514.34/s stream:26688.23Mbps
+  fortio T2 1MB c=1 r1 → QPS:700.69 p99:3.8234ms
+
+  --- T2 1MB P=1 rep 2/3 ---
+  iperf3 T2 1MB P=1 r2 → TCP:24.546G UDP:N/AG
+  netperf T2 1MB r2 → lat:657.1μs trans:1521.84/s stream:24122.28Mbps
+  fortio T2 1MB c=1 r2 → QPS:701.04 p99:3.8397ms
+
+  --- T2 1MB P=1 rep 3/3 ---
+  iperf3 T2 1MB P=1 r3 → TCP:23.7435G UDP:N/AG
+  netperf T2 1MB r3 → lat:656.09μs trans:1524.17/s stream:24717.73Mbps
+  fortio T2 1MB c=1 r3 → QPS:680.19 p99:3.8477ms
+
+  --- T2 1MB P=16 rep 1/3 ---
+  iperf3 T2 1MB P=16 r1 → TCP:23.9504G UDP:N/AG
+  netperf T2 1MB r1 → lat:666.43μs trans:1500.54/s stream:23911.47Mbps
+  fortio T2 1MB c=16 r1 → QPS:4098.3 p99:14.6609ms
+
+  --- T2 1MB P=16 rep 2/3 ---
+  iperf3 T2 1MB P=16 r2 → TCP:23.1725G UDP:N/AG
+  netperf T2 1MB r2 → lat:668.51μs trans:1495.86/s stream:23872.09Mbps
+  fortio T2 1MB c=16 r2 → QPS:4252.33 p99:13.708ms
+
+  --- T2 1MB P=16 rep 3/3 ---
+  iperf3 T2 1MB P=16 r3 → TCP:24.3699G UDP:N/AG
+  netperf T2 1MB r3 → lat:661.55μs trans:1511.61/s stream:24318.05Mbps
+  fortio T2 1MB c=16 r3 → QPS:4234.41 p99:13.7995ms
+
+  --- T2 1MB P=64 rep 1/3 ---
+  iperf3 T2 1MB P=64 r1 → TCP:19.9522G UDP:N/AG
+  netperf T2 1MB r1 → lat:694.02μs trans:1440.88/s stream:23676.73Mbps
+  fortio T2 1MB c=64 r1 → QPS:4166.65 p99:68.8675ms
+
+  --- T2 1MB P=64 rep 2/3 ---
+  iperf3 T2 1MB P=64 r2 → TCP:19.7993G UDP:N/AG
+  netperf T2 1MB r2 → lat:646.61μs trans:1546.52/s stream:23622.82Mbps
+  fortio T2 1MB c=64 r2 → QPS:4417.73 p99:65.7627ms
+
+  --- T2 1MB P=64 rep 3/3 ---
+  iperf3 T2 1MB P=64 r3 → TCP:20.1616G UDP:N/AG
+  netperf T2 1MB r3 → lat:650.24μs trans:1537.9/s stream:24239.92Mbps
+  fortio T2 1MB c=64 r3 → QPS:4672.31 p99:61.4206ms
+
+==================================================
+  T3 server=cni-bench-worker client=cni-bench-worker2 mode=service
+==================================================
+
+  --- T3 64B P=1 rep 1/3 ---
+  iperf3 T3 64B P=1 r1 → TCP:0.2884G UDP:0G
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=1 r1 → QPS:6159.12 p99:0.9911ms
+
+  --- T3 64B P=1 rep 2/3 ---
+  iperf3 T3 64B P=1 r2 → TCP:0.2855G UDP:0G
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=1 r2 → QPS:6150.81 p99:0.991ms
+
+  --- T3 64B P=1 rep 3/3 ---
+  iperf3 T3 64B P=1 r3 → TCP:0.2855G UDP:0G
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=1 r3 → QPS:6542.66 p99:0.991ms
+
+  --- T3 64B P=16 rep 1/3 ---
+  iperf3 T3 64B P=16 r1 → TCP:0.53G UDP:0G
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=16 r1 → QPS:69780.65 p99:1.6481ms
+
+  --- T3 64B P=16 rep 2/3 ---
+  iperf3 T3 64B P=16 r2 → TCP:0.539G UDP:0G
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=16 r2 → QPS:71489.93 p99:1.6283ms
+
+  --- T3 64B P=16 rep 3/3 ---
+  iperf3 T3 64B P=16 r3 → TCP:0.5376G UDP:0G
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=16 r3 → QPS:69137.56 p99:1.6555ms
+
+  --- T3 64B P=64 rep 1/3 ---
+  iperf3 T3 64B P=64 r1 → TCP:0.4002G UDP:0G
+  netperf T3 64B r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=64 r1 → QPS:106583.16 p99:3.312ms
+
+  --- T3 64B P=64 rep 2/3 ---
+  iperf3 T3 64B P=64 r2 → TCP:0.4003G UDP:0G
+  netperf T3 64B r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=64 r2 → QPS:108470.55 p99:3.1951ms
+
+  --- T3 64B P=64 rep 3/3 ---
+  iperf3 T3 64B P=64 r3 → TCP:0.4077G UDP:0G
+  netperf T3 64B r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 64B c=64 r3 → QPS:106991.04 p99:3.3117ms
+
+  --- T3 4KB P=1 rep 1/3 ---
+  iperf3 T3 4KB P=1 r1 → TCP:1.2989G UDP:0G
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=1 r1 → QPS:4103.17 p99:0.9928ms
+
+  --- T3 4KB P=1 rep 2/3 ---
+  iperf3 T3 4KB P=1 r2 → TCP:1.3041G UDP:0G
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=1 r2 → QPS:3954.93 p99:0.9931ms
+
+  --- T3 4KB P=1 rep 3/3 ---
+  iperf3 T3 4KB P=1 r3 → TCP:1.5501G UDP:0G
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=1 r3 → QPS:4104.46 p99:0.9932ms
+
+  --- T3 4KB P=16 rep 1/3 ---
+  iperf3 T3 4KB P=16 r1 → TCP:1.2951G UDP:0G
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=16 r1 → QPS:26408.82 p99:1.9839ms
+
+  --- T3 4KB P=16 rep 2/3 ---
+  iperf3 T3 4KB P=16 r2 → TCP:1.2815G UDP:0G
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=16 r2 → QPS:25919.53 p99:1.9859ms
+
+  --- T3 4KB P=16 rep 3/3 ---
+  iperf3 T3 4KB P=16 r3 → TCP:7.3293G UDP:0G
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=16 r3 → QPS:26651.52 p99:1.9818ms
+
+  --- T3 4KB P=64 rep 1/3 ---
+  iperf3 T3 4KB P=64 r1 → TCP:1.2542G UDP:0G
+  netperf T3 4KB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=64 r1 → QPS:53887.97 p99:7.2436ms
+
+  --- T3 4KB P=64 rep 2/3 ---
+  iperf3 T3 4KB P=64 r2 → TCP:1.2784G UDP:0G
+  netperf T3 4KB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=64 r2 → QPS:54379.14 p99:7.4855ms
+
+  --- T3 4KB P=64 rep 3/3 ---
+  iperf3 T3 4KB P=64 r3 → TCP:1.2611G UDP:0G
+  netperf T3 4KB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 4KB c=64 r3 → QPS:52512.77 p99:7.601ms
+
+  --- T3 1MB P=1 rep 1/3 ---
+  iperf3 T3 1MB P=1 r1 → TCP:24.1313G UDP:N/AG
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=1 r1 → QPS:541.89 p99:4.6971ms
+
+  --- T3 1MB P=1 rep 2/3 ---
+  iperf3 T3 1MB P=1 r2 → TCP:23.4987G UDP:N/AG
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=1 r2 → QPS:533.39 p99:4.6948ms
+
+  --- T3 1MB P=1 rep 3/3 ---
+  iperf3 T3 1MB P=1 r3 → TCP:24.6972G UDP:N/AG
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=1 r3 → QPS:540.14 p99:4.7101ms
+
+  --- T3 1MB P=16 rep 1/3 ---
+  iperf3 T3 1MB P=16 r1 → TCP:22.9683G UDP:N/AG
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=16 r1 → QPS:3843.78 p99:13.973ms
+
+  --- T3 1MB P=16 rep 2/3 ---
+  iperf3 T3 1MB P=16 r2 → TCP:22.9097G UDP:N/AG
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=16 r2 → QPS:3955.72 p99:13.8837ms
+
+  --- T3 1MB P=16 rep 3/3 ---
+  iperf3 T3 1MB P=16 r3 → TCP:22.7254G UDP:N/AG
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=16 r3 → QPS:4116.14 p99:13.606ms
+
+  --- T3 1MB P=64 rep 1/3 ---
+  iperf3 T3 1MB P=64 r1 → TCP:19.8406G UDP:N/AG
+  netperf T3 1MB r1 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=64 r1 → QPS:4284.64 p99:68.321ms
+
+  --- T3 1MB P=64 rep 2/3 ---
+  iperf3 T3 1MB P=64 r2 → TCP:19.851G UDP:N/AG
+  netperf T3 1MB r2 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=64 r2 → QPS:4485.2 p99:67.3565ms
+
+  --- T3 1MB P=64 rep 3/3 ---
+  iperf3 T3 1MB P=64 r3 → TCP:20.6494G UDP:N/AG
+  netperf T3 1MB r3 → lat:0μs trans:0/s stream:0Mbps
+  fortio T3 1MB c=64 r3 → QPS:4554.44 p99:66.9305ms
+  → 81 rows → 1_calico_iperf3.csv
+  → 81 rows → 1_calico_netperf.csv
+  → 81 rows → 1_calico_fortio.csv
+
+  Pod network reachability (10 iters)...
+    iter 1: 4.677s
+    iter 2: 2.962s
+    iter 3: 2.954s
+    iter 4: 2.957s
+    iter 5: 2.954s
+    iter 6: 2.955s
+    iter 7: 2.953s
+    iter 8: 2.953s
+    iter 9: 2.954s
+    iter 10: 2.961s
+  → 10 rows → 1_calico_pod_startup.csv
+
+  DONE: calico/baseline at 2026-03-29 20:19:43.771711
+  Data in: ./data/

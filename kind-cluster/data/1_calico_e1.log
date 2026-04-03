@@ -1,0 +1,42 @@
+nohup: ignoring input
+
+##################################################
+  calico / policy — 2026-03-29 20:23:34.029679
+  Duration per test: 10s
+##################################################
+
+
+==================================================
+  E1 server=cni-bench-worker client=cni-bench-worker2 mode=pod
+==================================================
+
+  --- E1 4KB P=16 rep 1/5 ---
+  iperf3 E1 4KB P=16 r1 → TCP:1.2779G UDP:1.1725G
+  netperf E1 4KB r1 → lat:36.81μs trans:27166.26/s stream:1347.25Mbps
+  fortio E1 4KB c=16 r1 → QPS:27750.89 p99:1.9704ms
+
+  --- E1 4KB P=16 rep 2/5 ---
+  iperf3 E1 4KB P=16 r2 → TCP:5.5982G UDP:1.18G
+  netperf E1 4KB r2 → lat:36.18μs trans:27637.45/s stream:1315.05Mbps
+  fortio E1 4KB c=16 r2 → QPS:29094.39 p99:1.965ms
+
+  --- E1 4KB P=16 rep 3/5 ---
+  iperf3 E1 4KB P=16 r3 → TCP:7.5318G UDP:1.1568G
+  netperf E1 4KB r3 → lat:36.13μs trans:27681.36/s stream:1365.61Mbps
+  fortio E1 4KB c=16 r3 → QPS:28157.52 p99:1.9678ms
+
+  --- E1 4KB P=16 rep 4/5 ---
+  iperf3 E1 4KB P=16 r4 → TCP:1.4756G UDP:1.1567G
+  netperf E1 4KB r4 → lat:36.21μs trans:27615.66/s stream:1315.44Mbps
+  fortio E1 4KB c=16 r4 → QPS:27561.5 p99:1.9719ms
+
+  --- E1 4KB P=16 rep 5/5 ---
+  iperf3 E1 4KB P=16 r5 → TCP:1.2937G UDP:1.1748G
+  netperf E1 4KB r5 → lat:36.08μs trans:27715.55/s stream:1361.93Mbps
+  fortio E1 4KB c=16 r5 → QPS:27974.97 p99:1.9673ms
+  → 5 rows → 1_calico_iperf3.csv
+  → 5 rows → 1_calico_netperf.csv
+  → 5 rows → 1_calico_fortio.csv
+
+  DONE: calico/policy at 2026-03-29 20:30:18.132255
+  Data in: ./data/
