@@ -1,0 +1,14 @@
+# service for netperf server
+apiVersion: v1
+kind: Service
+metadata:
+  name: netperf-server
+  namespace: benchmark
+spec:
+  selector:
+    app: netperf-server
+  ports:
+    - protocol: TCP
+      port: 12865
+      targetPort: 12865
+  type: ClusterIP

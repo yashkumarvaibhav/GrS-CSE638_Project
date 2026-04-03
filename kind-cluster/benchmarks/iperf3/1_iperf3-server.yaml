@@ -1,0 +1,21 @@
+# iperf3 server pod
+# runs in server mode listening on port 5201
+# pinned to worker node 1 so that client runs on the other worker
+apiVersion: v1
+kind: Pod
+metadata:
+  name: iperf3-server
+  namespace: benchmark
+  labels:
+    app: iperf3-server
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: cni-bench-worker
+  containers:
+    - name: iperf3-server
+      image: networkstatic/iperf3:latest
+      command: ["iperf3", "-s"]
+      ports:
+        - containerPort: 5201
+          protocol: TCP
+  terminationGracePeriodSeconds: 0

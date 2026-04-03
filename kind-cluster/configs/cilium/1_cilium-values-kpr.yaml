@@ -1,0 +1,21 @@
+# cilium helm values for E3 extension
+# this time kube-proxy replacment is ON
+kubeProxyReplacement: "true"
+k8sServiceHost: "cni-bench-control-plane"
+k8sServicePort: "6443"
+operator:
+  replicas: 1
+ipam:
+  mode: "kubernetes"
+routingMode: "tunnel"
+tunnelProtocol: "vxlan"
+hubble:
+  enabled: false
+  relay:
+    enabled: false
+  ui:
+    enabled: false
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"

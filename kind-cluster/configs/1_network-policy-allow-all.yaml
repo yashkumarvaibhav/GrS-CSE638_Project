@@ -1,0 +1,18 @@
+# allow-all network policy for the benchmark namespace
+# we apply this for the E1 extension scenario to measure
+# the overhead of having a network policy active
+# (even though it allows everthing, the CNI still has to evalute it)
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-all-benchmark
+  namespace: benchmark
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - {}
+  egress:
+    - {}

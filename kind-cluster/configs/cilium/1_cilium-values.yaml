@@ -1,0 +1,25 @@
+# cilium helm values - baseline config
+# kube-proxy stays active (kubeProxyReplacement=false) so its a fair
+# comparision with flannel and calico which also use kube-proxy
+kubeProxyReplacement: "false"
+k8sServiceHost: "cni-bench-control-plane"
+k8sServicePort: "6443"
+operator:
+  replicas: 1
+ipam:
+  mode: "kubernetes"
+# using vxlan tunnel mode to match flannel/calico overlay mode
+routingMode: "tunnel"
+tunnelProtocol: "vxlan"
+# hubble disabled - dont want observabilty overhead skewing benchmarks
+hubble:
+  enabled: false
+  relay:
+    enabled: false
+  ui:
+    enabled: false
+# keep resource requests low for kind cluster
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"

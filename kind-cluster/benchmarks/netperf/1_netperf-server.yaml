@@ -1,0 +1,20 @@
+# netperf server pod - runs netserver in foreground mode
+# same pattern as iperf3 - pinned to first worker node
+apiVersion: v1
+kind: Pod
+metadata:
+  name: netperf-server
+  namespace: benchmark
+  labels:
+    app: netperf-server
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: cni-bench-worker
+  containers:
+    - name: netperf-server
+      image: networkstatic/netperf:latest
+      command: ["netserver", "-D"]  # -D means foreground/daemon mode
+      ports:
+        - containerPort: 12865
+          protocol: TCP
+  terminationGracePeriodSeconds: 0

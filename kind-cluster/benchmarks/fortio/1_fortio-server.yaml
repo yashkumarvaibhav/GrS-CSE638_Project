@@ -1,0 +1,21 @@
+# fortio server pod
+# fortio is an http load testing tool from google
+# runs on port 8080 by default, we use the /echo endpoint for benchmarks
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fortio-server
+  namespace: benchmark
+  labels:
+    app: fortio-server
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: cni-bench-worker
+  containers:
+    - name: fortio-server
+      image: fortio/fortio:latest
+      command: ["fortio", "server"]
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+  terminationGracePeriodSeconds: 0

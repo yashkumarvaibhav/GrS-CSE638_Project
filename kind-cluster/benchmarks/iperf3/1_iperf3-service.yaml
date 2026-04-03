@@ -1,0 +1,15 @@
+# clusterIP service for iperf3 server
+# gives us a stable DNS name within the cluster
+apiVersion: v1
+kind: Service
+metadata:
+  name: iperf3-server
+  namespace: benchmark
+spec:
+  selector:
+    app: iperf3-server
+  ports:
+    - protocol: TCP
+      port: 5201
+      targetPort: 5201
+  type: ClusterIP

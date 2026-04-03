@@ -1,0 +1,26 @@
+# === Non-submittable internal workspace directories ===
+_kind-cluster-internal/
+_bare-metal-internal/
+_shared-internal/
+
+# === Build artifacts ===
+*.log
+!kind-cluster/data/*.log
+*.aux
+*.toc
+*.out
+*.synctex.gz
+
+# === Python virtual environments ===
+.venv/
+
+# === Python cache ===
+__pycache__/
+*.pyc
+
+# === Zip archives (submission zips kept locally, not in repo) ===
+*.zip
+
+# === OS files ===
+.DS_Store
+Thumbs.db

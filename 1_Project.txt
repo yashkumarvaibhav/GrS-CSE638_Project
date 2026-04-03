@@ -1,0 +1,49 @@
+Project ID : P1
+Project Name : Performance Comparison of Kubernetes CNI Plugins
+Tech: Kubernetes
+Statement: Different CNI plugins (Flannel, Calico, Cilium) implement networking in fundamentally different ways. This project compares their performance, latency, and CPU overhead under realistic microservice communication patterns and explains observed behavior via architectural differences.
+
+This is a open ended project.
+Many groups are doing this project. Same project != same code, same results, same everything
+
+
+Instructions :
+1. Submit the code here (Google Classroom), as well as on GitHub (Naming convention: <project_id>_<short_project_title>. zip). Put all the code, scripts, and plots. Github repo should not be a zip folder.
+2. ALL files in the project folder must have naming conventions like this: groupID_pqr.c, groupID_xyz.h, groupID_report.pdf, groupID.csv etc.
+3. if the plots are needed for the your project then submit matplotlib files with ".py" extension only (no .ipynb is allowed) and hardcode the values in the matplotlib file to plot the graphs. CSVs shouldn't be supplied as an i/p to matplotlib files. Submit the CSVs in the project folder. Also, the .py files must follow naming convention mentioned in point 2.
+4. Only 'zip' extension is allowed w/o binaries. If '.rar' extension is or binaries are found, 0 marks will be allotted.
+
+Project Part : A Due Mar 10, 11:59 PM
+A. 
+(1) Project Title 
+(2) Team members 
+(3) Problem  
+(4) Motivation -- Why is this problem important?
+(5) Objectives -- What is the scope of your project?
+(5) Background -- Include the necessary material required to understand the project
+(6) Methodology/Design -- What are the components of your system? How do the components interact with each other?
+(7) (Initial) Implementation 
+(8) Evaluation (if done) & observations -- Experiment setup/testbed details, how did you run your experiment? What is the question answered by each experiment? Show the plot, and discuss the observations
+(9) Outcomes & Conclusion
+(10) References
+(B) Submit the code here, as well as on GitHub (Naming convention: <project_id>_partA_<short_project_title>. zip). Put all the code, scripts, and plots. Github repo should not be a zip folder.
+
+
+Project Part : B - Due Apr 18, 11:59 PM
+Continue with the same template as the previous submission, and update it for the final submission
+(A)
+(1) Project Title 
+(2) Team members 
+(3) Problem  
+(4) Motivation -- Why is this problem important?
+(5) Objectives -- What is the scope of your project?
+(5) Background -- Include the necessary material required to understand the project
+(6) Methodology/Design -- What are the components of your system? How do the components interact with each other?
+(7) Implementation 
+(8) Evaluation & observations -- Experiment setup/testbed details, how did you run your experiment? What is the question answered by each experiment? Show the plot, and discuss the observations
+(9) Outcomes & Conclusion
+(10) References
+
+(B) Submit the code here, as well as on GitHub (Naming convention: <project_id>_<short_project_title>. zip). Put all the code, scripts, and plots. Github repo should not be a zip folder.
+
+(C) Submit the presentation 
