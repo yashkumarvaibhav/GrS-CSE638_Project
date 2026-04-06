@@ -1,0 +1,42 @@
+nohup: ignoring input
+
+##################################################
+  cilium / policy — 2026-04-05 19:38:37.711698
+  Duration per test: 10s
+##################################################
+
+
+==================================================
+  E1 server=cni-bench-worker client=cni-bench-worker2 mode=pod
+==================================================
+
+  --- E1 4KB P=16 rep 1/5 ---
+  iperf3 E1 4KB P=16 r1 → TCP:1.7003G UDP:1.1795G
+  netperf E1 4KB r1 → lat:30.35μs trans:32947.0/s stream:1809.19Mbps
+  fortio E1 4KB c=16 r1 → QPS:49253.8 p99:1.291ms
+
+  --- E1 4KB P=16 rep 2/5 ---
+  iperf3 E1 4KB P=16 r2 → TCP:7.6091G UDP:1.1529G
+  netperf E1 4KB r2 → lat:30.17μs trans:33148.74/s stream:1790.78Mbps
+  fortio E1 4KB c=16 r2 → QPS:49463.14 p99:1.3314ms
+
+  --- E1 4KB P=16 rep 3/5 ---
+  iperf3 E1 4KB P=16 r3 → TCP:7.9336G UDP:1.1666G
+  netperf E1 4KB r3 → lat:30.21μs trans:33106.98/s stream:1789.37Mbps
+  fortio E1 4KB c=16 r3 → QPS:49799.48 p99:0.9996ms
+
+  --- E1 4KB P=16 rep 4/5 ---
+  iperf3 E1 4KB P=16 r4 → TCP:5.7286G UDP:1.1611G
+  netperf E1 4KB r4 → lat:30.01μs trans:33317.92/s stream:1814.0Mbps
+  fortio E1 4KB c=16 r4 → QPS:50045.79 p99:1.1359ms
+
+  --- E1 4KB P=16 rep 5/5 ---
+  iperf3 E1 4KB P=16 r5 → TCP:2.3291G UDP:1.136G
+  netperf E1 4KB r5 → lat:30.58μs trans:32703.19/s stream:1832.08Mbps
+  fortio E1 4KB c=16 r5 → QPS:49824.9 p99:1.0086ms
+  → 5 rows → 1_cilium_iperf3.csv
+  → 5 rows → 1_cilium_netperf.csv
+  → 5 rows → 1_cilium_fortio.csv
+
+  DONE: cilium/policy at 2026-04-05 19:45:22.429645
+  Data in: ./data/

@@ -1,0 +1,42 @@
+nohup: ignoring input
+
+##################################################
+  cilium / wireguard — 2026-04-05 19:51:11.175700
+  Duration per test: 10s
+##################################################
+
+
+==================================================
+  E2 server=cni-bench-worker client=cni-bench-worker2 mode=pod
+==================================================
+
+  --- E2 4KB P=16 rep 1/5 ---
+  iperf3 E2 4KB P=16 r1 → TCP:1.2294G UDP:1.3616G
+  netperf E2 4KB r1 → lat:138.91μs trans:7198.98/s stream:1289.13Mbps
+  fortio E2 4KB c=16 r1 → QPS:18246.26 p99:1.935ms
+
+  --- E2 4KB P=16 rep 2/5 ---
+  iperf3 E2 4KB P=16 r2 → TCP:1.2225G UDP:1.3318G
+  netperf E2 4KB r2 → lat:139.48μs trans:7169.65/s stream:1289.28Mbps
+  fortio E2 4KB c=16 r2 → QPS:18292.16 p99:1.9328ms
+
+  --- E2 4KB P=16 rep 3/5 ---
+  iperf3 E2 4KB P=16 r3 → TCP:1.2309G UDP:1.3514G
+  netperf E2 4KB r3 → lat:139.86μs trans:7150.05/s stream:1289.96Mbps
+  fortio E2 4KB c=16 r3 → QPS:18228.48 p99:1.9373ms
+
+  --- E2 4KB P=16 rep 4/5 ---
+  iperf3 E2 4KB P=16 r4 → TCP:1.226G UDP:1.3705G
+  netperf E2 4KB r4 → lat:137.66μs trans:7264.13/s stream:1291.38Mbps
+  fortio E2 4KB c=16 r4 → QPS:18194.78 p99:1.936ms
+
+  --- E2 4KB P=16 rep 5/5 ---
+  iperf3 E2 4KB P=16 r5 → TCP:1.2271G UDP:1.3113G
+  netperf E2 4KB r5 → lat:141.19μs trans:7082.49/s stream:1281.34Mbps
+  fortio E2 4KB c=16 r5 → QPS:18184.92 p99:1.9374ms
+  → 5 rows → 1_cilium_iperf3.csv
+  → 5 rows → 1_cilium_netperf.csv
+  → 5 rows → 1_cilium_fortio.csv
+
+  DONE: cilium/wireguard at 2026-04-05 19:58:03.720041
+  Data in: ./data/
